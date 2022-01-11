@@ -286,13 +286,7 @@ button[type="submit"] {
   line-height: normal;
   letter-spacing: normal;
   transition: all 0.3s ease;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.thank-msg.active {
-  opacity: 1;
-  visibility: visible;
+  display: none;
 }
 
 .msg-close {

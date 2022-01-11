@@ -115,7 +115,6 @@
         type: 'POST',
         url: "form.php",
         data: $("form").serialize(),
-        // contentType: "application/json; charset=utf-8",
         headers: {
           // 'x-config-token': token,
         },
@@ -124,7 +123,7 @@
           console.log(formData);
           // window.location.href = "/demo-example/form/thank-you.html";
           $("form").get(0).reset();
-          $(".thank-msg").addClass("active");
+          $(".thank-msg").fadeIn();
           $('input[type="submit"]').val("Submit").attr("disabled", false);
         },
         error: function(error) {
@@ -137,7 +136,7 @@
     function serviceError() {
       $(".tech-error-msg").show();
       $("html, body").animate({
-        scrollTop: $(".tech-error-msg").show().offset().top
+        scrollTop: $(".tech-error-msg").offset().top
       }, 500);
       $('input[type="submit"]').val("Submit").attr("disabled", false);
     }
@@ -266,8 +265,7 @@
     });
 
     $(".msg-close").on("click", function(e) {
-      $(".thank-msg").removeClass("active");
-      $(".thank-msg").hide();
+      $(".thank-msg").fadeOut();
     })
 
   });
