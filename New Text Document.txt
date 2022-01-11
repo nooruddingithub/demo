@@ -1,4 +1,0 @@
-Run JavaScript Only After Entire Page Has Loaded
-$(window).bind("load", function() {
-   // code here
-});
