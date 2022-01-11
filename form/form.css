@@ -50,6 +50,7 @@ input[type="tel"] {
   width: 100%;
   display: block;
   opacity: 1;
+  resize: vertical;
   transition: all 0.3s ease;
   border-radius: 0;
   border: solid 1px #d0d0d0;

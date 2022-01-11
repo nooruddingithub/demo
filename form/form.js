@@ -115,7 +115,7 @@
         type: 'POST',
         url: "form.php",
         data: $("form").serialize(),
-        contentType: "application/json; charset=utf-8",
+        // contentType: "application/json; charset=utf-8",
         headers: {
           // 'x-config-token': token,
         },
@@ -123,8 +123,8 @@
           var formData = $("form").serializeArray();
           console.log(formData);
           // window.location.href = "/demo-example/form/thank-you.html";
-          $(".thank-msg").addClass("active");
           $("form").get(0).reset();
+          $(".thank-msg").addClass("active");
           $('input[type="submit"]').val("Submit").attr("disabled", false);
         },
         error: function(error) {
