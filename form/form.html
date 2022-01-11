@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>:: Form ::</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="form.js"></script>
+    <link rel="stylesheet" type="text/css" href="form.css">
+  </head>
+
+  <body>
+
+    <form method="post">
+      <div class="tech-error-msg">Technical Error</div>
+      <div class="form-item">
+        <label>First Name</label>
+        <input autocomplete="nope" type="text" id="first_name" name="first_name" placeholder="First Name">
+        <span class="error-msg">Please enter your first name.</span>
+      </div>
+
+      <div class="form-item">
+        <label>Last Name</label>
+        <input autocomplete="nope" type="text" id="last_name" name="last_name">
+        <span class="error-msg">Please enter your last name.</span>
+      </div>
+
+      <div class="form-item">
+        <label>Email Address</label>
+        <input autocomplete="nope" type="email" id="email" name="email">
+        <span class="error-msg">Please enter a valid email address.</span>
+      </div>
+
+      <div class="form-item">
+        <label>Mobile Number</label>
+        <input autocomplete="nope" type="tel" id="phone_number" name="phone_number">
+        <span class="error-msg">Please enter your phone number.</span>
+      </div>
+
+      <div class="form-item">
+        <label>Select Gender</label>
+        <div class="radio">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+        </div>
+        <div class="radio">
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+        </div>
+        <span class="error-msg">Required this field.</span>
+      </div>
+
+      <div class="form-item">
+        <label>Address 1</label>
+        <input autocomplete="nope" type="text" id="address_1" name="address_1">
+        <span class="error-msg">Please enter address.</span>
+      </div>
+
+      <div class="form-item">
+        <label>Address 2 (Optional)</label>
+        <input autocomplete="nope" type="text" id="address_2" name="address_2">
+      </div>
+
+      <div class="form-item">
+        <label>City</label>
+        <input autocomplete="nope" type="text" id="city" name="city">
+        <span class="error-msg">Please enter city name.</span>
+      </div>
+
+      <div class="form-item">
+        <label>Select State</label>
+        <select id="selectbox_1" name="state">
+          <option value="">Select a State</option>
+          <option value="asam">Asam</option>
+          <option value="bihar">Bihar</option>
+          <option value="maharashtra">Maharashtra</option>
+          <option value="up">UP</option>
+        </select>
+        <span class="error-msg">Please enter state.</span>
+      </div>
+
+      <div class="form-item">
+        <label>Zip Code</label>
+        <input autocomplete="nope" type="tel" id="zip_code" name="zip_code">
+        <span class="error-msg">Please enter zip code.</span>
+      </div>
+
+      <div class="form-item">
+        <label>Tell Us Your Story</label>
+        <textarea id="textarea_1" name="textarea_1" rows="5" cols="60" placeholder="3000 character limit"></textarea>
+        <span class="error-msg">Required this field.</span>
+        <span class="story-length-error">This value is too long.</span>
+        <span class="story-length">0 of 3000 characters remaining.</span>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox_1" name="checkbox_1" value="meet value">
+        <label for="checkbox_1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summae mihi videtur inscitiae. Duo Reges: constructio interrete. At Zeno eum non beatum modo, sed etiam divitem dicere ausus est.</p>
+        </label>
+        <span class="error-msg">Required this field.</span>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox_2" name="checkbox_2" value="aggrement">
+        <label for="checkbox_2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Summae mihi videtur inscitiae. Duo Reges: constructio interrete. At Zeno eum non beatum modo, sed etiam divitem dicere ausus est.</p>
+        </label>
+        <span class="error-msg">Required this field.</span>
+      </div>
+      <input type="submit" id="submit" name="submit" value="Submit">
+      <div class="thank-msg">Your message has been sent Successfully.<span class="msg-close">&times;</span></div>
+    </form>
+
+  </body>
+
+</html>

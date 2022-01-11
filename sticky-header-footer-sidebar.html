@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Sticky Element</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+
+        // Start Header Sticky Function.
+        var hStickyItem = document.querySelector(".header"); // header sticky item.
+        var hTopItem = document.querySelector(".header-top"); // normal element above sticky item if any.
+        $(hStickyItem).wrap('<div class="hstickywrapper"></div>');
+
+        $.fn.isHeaderTop = function() {
+          var scrollTop = $(window).scrollTop();
+          var elementTop = $(this).outerHeight();
+          return scrollTop >= elementTop;
+        };
+
+        function hStickyFun() {
+          var hStickyHeight = $(hStickyItem).outerHeight() + 'px';
+          if ($(hTopItem).is(":visible")) {
+            if ($(hTopItem).isHeaderTop()) {
+              $(hStickyItem).addClass("hsticky");
+              $(hStickyItem).parent().css({
+                'padding-top': hStickyHeight
+              });
+            } else {
+              $(hStickyItem).removeClass("hsticky");
+              $(hStickyItem).parent().css({
+                'padding-top': '0'
+              });
+            }
+          } else {
+            $(hStickyItem).addClass("hsticky");
+            $(hStickyItem).parent().css({
+              'padding-top': hStickyHeight
+            });
+          }
+        }
+        hStickyFun();
+        window.addEventListener("resize", function(event) {
+          hStickyFun();
+        });
+        window.addEventListener("scroll", function(event) {
+          hStickyFun();
+        });
+
+        // Start Footer Sticky Function.
+        var fStickyItem = document.querySelector(".footer-top"); // footer sticky item.
+        var fBtmItem = document.querySelector(".footer-bottom"); // normal element below sticky item if any.
+        $(fStickyItem).wrap('<div class="fstickywrapper"></div>');
+
+        $.fn.isInViewport = function() {
+          var elementTop = $(this).offset().top;
+          var elementBottom = elementTop + $(this).outerHeight();
+          var viewportTop = $(window).scrollTop();
+          var viewportBottom = viewportTop + $(window).height();
+          return elementBottom > viewportTop && elementTop < viewportBottom;
+        };
+
+        function fStickyFun() {
+          var fStickyHeight = $(fStickyItem).outerHeight() + 'px';
+          if ($(fBtmItem).is(":visible")) {
+            if ($(fBtmItem).isInViewport()) {
+              $(fStickyItem).removeClass("fsticky");
+              $(fStickyItem).parent().css({
+                'padding-top': '0'
+              });
+            } else {
+              $(fStickyItem).addClass("fsticky");
+              $(fStickyItem).parent().css({
+                'padding-top': fStickyHeight
+              });
+            }
+          } else {
+            $(fStickyItem).addClass("fsticky");
+            $(fStickyItem).parent().css({
+              'padding-top': fStickyHeight
+            });
+          }
+        }
+        fStickyFun();
+        window.addEventListener("scroll", function(event) {
+          fStickyFun();
+        });
+        window.addEventListener("resize", function(event) {
+          fStickyFun();
+        });
+
+      });
+
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body,
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      /* start header style */
+      .header-top {
+        color: #000;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+        border: solid 1px green;
+        background: #f1f1f1;
+      }
+
+      .header {
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+        border: solid 1px red;
+        background: #bada55;
+        transition: transform 0.4s;
+      }
+
+      .hsticky {
+        position: fixed;
+      }
+
+      /* start footer style */
+      .footer-top {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+        background: #bada55;
+        border: solid 1px pink;
+        transition: transform 0.4s;
+        position: relative;
+      }
+
+      .fsticky {
+        position: fixed;
+      }
+
+      /* start content */
+      .left-content {
+        width: 250px;
+        border: solid 1px pink;
+      }
+
+      .right-content {
+        width: calc(100% - 250px);
+        margin-left: 250px;
+        border: solid 1px yellow;
+      }
+
+      .sidebar {
+        width: 250px;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+        border: solid 1px red;
+        background: #bada55;
+        transition: transform 0.4s;
+      }
+      .sSticky {
+        position: fixed;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+
+    <div class="header-top">
+      <h1>Header Top Navigation Header Top Navigation Header Top Navigation Header </h1>
+    </div>
+
+    <div class="header">
+      <h1>Header Header Header Header Header Header Header Header Header Header</h1>
+    </div>
+
+    <section class="main-content" style="height: 1000px; background-color: lightgray; border:solid 2px red">
+      <div>
+        <div class="sidebar">
+          <p>Sidebar Content Sidebar Content Sidebar Content Sidebar Content</p>
+        </div>
+      </div>
+      <div class="right-content">
+        <h1>Start Content </h1>
+      </div>
+    </section>
+
+    <div class="footer-top">
+      <h2>Footer Sticky Footer StickyFooter StickyFooter StickyFooter StickyFooter StickyFooter StickyFooter StickyFooter StickyFooter StickyFooter StickyFooter StickyFooter StickyFooter StickyFooter Sticky</h2>
+    </div>
+
+    <footer class="footer-bottom" style="height: 1000px; background-color: red; border:solid 2px green">
+      <h2>Footer</h2>
+    </footer>
+
+  </body>
+
+</html>

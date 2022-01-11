@@ -1,0 +1,326 @@
+/* global style */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  color: #202020;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Helvetica LT W05 Roman", sans-serif;
+  background: #fff;
+}
+
+/* start form style */
+select,
+textarea,
+input[type=file],
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="checkbox"],
+input[type="submit"],
+button[type="submit"] {
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  opacity: 1;
+}
+
+textarea,
+select,
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  outline: none;
+  width: 100%;
+  display: block;
+  opacity: 1;
+  transition: all 0.3s ease;
+  border-radius: 0;
+  border: solid 1px #d0d0d0;
+  color: #464646;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-family: "Helvetica LT W05 Roman", Verdana, sans-serif;
+  background-color: #fff;
+  padding: 9px 10px 10px 10px;
+  margin: 0 0 4px 0;
+}
+
+textarea:focus,
+select:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: #00a1d1;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  border: 0;
+  outline: none;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 152px;
+  color: #fff;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+  border-radius: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #00a1d1;
+  padding: 16px 10px 15px 10px;
+  cursor: pointer;
+}
+
+
+form label {
+  text-align: left;
+  display: block;
+  color: #464646;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  font-family: "Helvetica LT W05 Bold", arial, sans-serif;
+}
+
+.checkbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.checkbox .error-msg {
+  margin-left: 40px;
+}
+
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  opacity: 1;
+  margin: 0;
+}
+
+.checkbox label {
+  margin: 0;
+  position: relative;
+  padding: 0 0 0 40px;
+  display: inline-block;
+  text-align: left;
+  color: #5a5a5a;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: normal;
+  font-weight: normal;
+  text-transform: none;
+  font-family: "Helvetica LT W05 Roman", Verdana, sans-serif;
+}
+
+.checkbox label p {
+  margin: 0;
+}
+
+.checkbox input[type="checkbox"]+label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  z-index: 2;
+  border: solid 1px #979797;
+  background-color: #fff;
+}
+
+.checkbox input[type="checkbox"]:checked+label::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #00a1d1;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.radio {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.radio input[type="radio"] {
+  border: 0;
+  outline: none;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  opacity: 1;
+  margin: 0;
+}
+
+.radio input[type="radio"]:focus {
+  border: 0;
+  outline: none;
+}
+
+.radio label {
+  margin: 0;
+  position: relative;
+  padding: 0 0 0 30px;
+  display: inline-block;
+  text-align: left;
+  color: #5a5a5a;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: normal;
+  font-weight: normal;
+  text-transform: none;
+  font-family: "Helvetica LT W05 Roman", Verdana, sans-serif;
+}
+
+.radio input[type="radio"]+label::before {
+  content: "";
+  opacity: 1;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  border: solid 2px #979797;
+  background-color: #fff;
+}
+
+.radio input[type="radio"]:checked+label::after {
+  content: "";
+  opacity: 1;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  left: 5px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  border: solid 1px #00a1d1;
+  background-color: #00a1d1;
+}
+
+/* error message */
+.error-msg,
+.story-length-error {
+  color: red;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: normal;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.error-msg.active,
+.error .error-msg {
+  opacity: 1;
+  visibility: visible;
+}
+
+.story-length-error {
+  display: none;
+  opacity: 1;
+  visibility: visible;
+}
+
+.error select,
+.error textarea,
+.error input[type="text"],
+.error input[type="email"],
+.error input[type="tel"],
+.error select:focus,
+.error textarea:focus,
+.error input[type="text"]:focus,
+.error input[type="email"]:focus,
+.error input[type="tel"]:focus,
+.error input[type="radio"]+label::before,
+.error input[type="checkbox"]+label::before {
+  border-color: red;
+}
+
+.story-length {
+  float: right;
+  color: #000;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.story-length strong {
+  color: red;
+}
+
+.thank-msg {
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: normal;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.thank-msg.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.msg-close {
+  cursor: pointer;
+  color: red;
+  font-size: 18px;
+}
+
+/* start form layout */
+form {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 15px;
+}
+
+.form-item {
+  display: table;
+  width: 100%;
+  margin-bottom: 30px;
+}
