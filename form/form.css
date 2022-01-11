@@ -96,20 +96,6 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-
-form label {
-  text-align: left;
-  display: block;
-  color: #464646;
-  font-size: 14px;
-  line-height: normal;
-  letter-spacing: normal;
-  font-weight: normal;
-  text-transform: uppercase;
-  margin: 0 0 10px 0;
-  font-family: "Helvetica LT W05 Bold", arial, sans-serif;
-}
-
 .checkbox {
   position: relative;
   margin-bottom: 30px;
@@ -119,7 +105,7 @@ form label {
   margin-left: 40px;
 }
 
-.checkbox input[type="checkbox"] {
+.checkbox>input[type="checkbox"] {
   position: absolute;
   left: 2px;
   top: 2px;
@@ -127,7 +113,7 @@ form label {
   margin: 0;
 }
 
-.checkbox label {
+.checkbox>label {
   margin: 0;
   position: relative;
   padding: 0 0 0 40px;
@@ -142,11 +128,11 @@ form label {
   font-family: "Helvetica LT W05 Roman", Verdana, sans-serif;
 }
 
-.checkbox label p {
+.checkbox>label p {
   margin: 0;
 }
 
-.checkbox input[type="checkbox"]+label::before {
+.checkbox>input[type="checkbox"]+label::before {
   content: "";
   display: block;
   position: absolute;
@@ -161,7 +147,7 @@ form label {
   background-color: #fff;
 }
 
-.checkbox input[type="checkbox"]:checked+label::after {
+.checkbox>input[type="checkbox"]:checked+label::after {
   content: "";
   position: absolute;
   z-index: 3;
@@ -179,7 +165,7 @@ form label {
   margin-bottom: 5px;
 }
 
-.radio input[type="radio"] {
+.radio>input[type="radio"] {
   border: 0;
   outline: none;
   position: absolute;
@@ -189,12 +175,12 @@ form label {
   margin: 0;
 }
 
-.radio input[type="radio"]:focus {
+.radio>input[type="radio"]:focus {
   border: 0;
   outline: none;
 }
 
-.radio label {
+.radio>label {
   margin: 0;
   position: relative;
   padding: 0 0 0 30px;
@@ -209,7 +195,7 @@ form label {
   font-family: "Helvetica LT W05 Roman", Verdana, sans-serif;
 }
 
-.radio input[type="radio"]+label::before {
+.radio>input[type="radio"]+label::before {
   content: "";
   opacity: 1;
   display: block;
@@ -224,7 +210,7 @@ form label {
   background-color: #fff;
 }
 
-.radio input[type="radio"]:checked+label::after {
+.radio>input[type="radio"]:checked+label::after {
   content: "";
   opacity: 1;
   display: block;
@@ -241,6 +227,7 @@ form label {
 
 /* error message */
 .error-msg,
+.tech-error-msg,
 .story-length-error {
   color: red;
   font-size: 14px;
@@ -257,6 +244,7 @@ form label {
   visibility: visible;
 }
 
+.tech-error-msg,
 .story-length-error {
   display: none;
   opacity: 1;
@@ -323,4 +311,17 @@ form {
   display: table;
   width: 100%;
   margin-bottom: 30px;
+}
+
+form label {
+  text-align: left;
+  display: block;
+  color: #464646;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+  font-family: "Helvetica LT W05 Bold", arial, sans-serif;
 }

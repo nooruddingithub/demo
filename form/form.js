@@ -5,7 +5,7 @@
       e.preventDefault();
 
       if ($("#first_name").length) {
-        if ($("#first_name").val().length < 2 || $("#first_name").val().length > 10) {
+        if ($("#first_name").val().length < 2 || $("#first_name").val().length > 50) {
           $("#first_name").parent().removeClass("success").addClass("error");
         } else {
           $("#first_name").parent().removeClass("error").addClass("success");
@@ -13,7 +13,7 @@
       }
 
       if ($("#last_name").length) {
-        if ($("#last_name").val().length < 2 || $("#last_name").val().length > 10) {
+        if ($("#last_name").val().length < 2 || $("#last_name").val().length > 50) {
           $("#last_name").parent().removeClass("success").addClass("error");
         } else {
           $("#last_name").parent().removeClass("error").addClass("success");
@@ -46,7 +46,7 @@
       }
 
       if ($("#address_1").length) {
-        if ($("#address_1").val().length < 2 || $("#address_1").val().trim().length > 10) {
+        if ($("#address_1").val().length < 2 || $("#address_1").val().trim().length > 50) {
           $("#address_1").parent().removeClass("success").addClass("error");
         } else {
           $("#address_1").parent().removeClass("error").addClass("success");
@@ -54,7 +54,7 @@
       }
 
       if ($("#city").length) {
-        if ($("#city").val().length < 2 || $("#city").val().trim().length > 10) {
+        if ($("#city").val().length < 2 || $("#city").val().trim().length > 50) {
           $("#city").parent().removeClass("success").addClass("error");
         } else {
           $("#city").parent().removeClass("error").addClass("success");
@@ -100,8 +100,8 @@
       }
 
       if (!$(".error").length) {
-        $('input[type="submit"]').val("Please Wait...").attr("disabled", true);
         call_request();
+        $('input[type="submit"]').val("Please Wait...").attr("disabled", true);
       } else {
         $("html, body").animate({
           scrollTop: $(".error").offset().top
@@ -137,7 +137,7 @@
     function serviceError() {
       $(".tech-error-msg").show();
       $("html, body").animate({
-        scrollTop: $(".tech-error-msg").offset().top
+        scrollTop: $(".tech-error-msg").show().offset().top
       }, 500);
       $('input[type="submit"]').val("Submit").attr("disabled", false);
     }
@@ -169,7 +169,7 @@
 
     // validation for email.
     $("#email").bind("keypress keyup focusout", function(e) {
-      if ($(this).val().trim().length < 5 || $(this).val().trim().length > 10) {
+      if ($(this).val().trim().length < 5 || $(this).val().trim().length > 50) {
         $(this).val($(this).val().substr(0, 10));
         $(this).parent().removeClass("success").addClass("error");
       } else if (!validateEmail($(this).val())) {
@@ -233,8 +233,8 @@
     });
 
     $("#first_name, #last_name, #address_1, #city").bind("keydown keyup focusout", function(e) {
-      if ($(this).val() == "" || $(this).val().trim().length < 2 || $(this).val().trim().length > 10) {
-        $(this).val($(this).val().substr(0, 10));
+      if ($(this).val() == "" || $(this).val().trim().length < 2 || $(this).val().trim().length > 50) {
+        $(this).val($(this).val().substr(0, 50));
         $(this).parent().removeClass("success").addClass("error");
       } else {
         $(this).parent().removeClass("error").addClass("success");
