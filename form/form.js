@@ -114,6 +114,7 @@
       $.ajax({
         type: "POST",
         dataType: "json",
+        contentType: "application/json; charset=utf-8",
         url: "form.php",
         data: $("form").serialize(),
         headers: {
