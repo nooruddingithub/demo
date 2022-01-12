@@ -112,7 +112,7 @@
 
     function call_request() {
       $.ajax({
-        url: "form.php",
+        url: "/form.php",
         type: "POST",
         // dataType: "json",
         data: $("#test").serialize(),
