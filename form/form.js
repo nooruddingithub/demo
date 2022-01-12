@@ -111,12 +111,13 @@
     });
 
     function call_request() {
+      var data = $("form").serialize();
       $.ajax({
         type: "POST",
         dataType: "json",
         contentType: "application/json; charset=utf-8",
         url: "form.php",
-        data: $("form").serialize(),
+        data: data,
         headers: {
           // 'x-config-token': token,
         },
