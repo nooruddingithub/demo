@@ -113,10 +113,10 @@
     function call_request() {
       var data = $("#test").serialize();
       $.ajax({
+        url: "form.php",
         type: "POST",
         contentType: "application/json; charset=utf-8",
         data: data,
-        url: "form.php",
         headers: {
           // 'x-config-token': token,
         },
