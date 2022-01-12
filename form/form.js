@@ -112,8 +112,8 @@
 
     function call_request() {
       $.ajax({
-        type: 'POST',
-        url: "/form.php",
+        type: "GET",
+        url: "form.php",
         data: $("form").serialize(),
         headers: {
           // 'x-config-token': token,
