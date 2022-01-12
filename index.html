@@ -1,38 +1,105 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML Form </title>
 
-  <head>
-    <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>:: Form ::</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="form.js"></script>
-    <link rel="stylesheet" type="text/css" href="form.css">
-  </head>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="custom.js"></script>
 
-  <body>
+</head>
 
-    <form id="test" method="post">
-      <div class="tech-error-msg">Technical Error</div>
-      
-      <div class="form-item">
-        <label>Email Address</label>
-        <input autocomplete="nope" type="email" id="email" name="email">
-        <span class="error-msg">Please enter a valid email address.</span>
-      </div>
+<body>
+	<form id="contactform" name="contactform">
+		<div>
+			<label for="name">Name :</label> 
+			<input type="text" id="cname" name="cname" placeholder="Enter Your Name" required>
+		</div>
+		
+		<br>
+		
+		<div>
+			<label for="email">Email :</label> 
+			<input type="email" id="cemail" name="cemail" placeholder="Enter Your Email ID" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+		</div>
+		
+		<br>
+		
+		<div>
+			<label for="email">Mobile :</label> 
+			<input type="tel" id="cphone" name="cphone" pattern="[789][0-9]{9}" maxlength="12" placeholder="MOBILE NO" required>
+		</div>
+		
+		<br>
+		
+		<div>
+			<label for="website">Website :</label> 
+			<input type="url" id="cwebsite" name="cwebsite" placeholder="Enter Your Website">
+		</div>
+		
+		<br>
+		
+		<div>
+			<label for="ccountries">City :</label> 
+			<select id="ccity" name="ccity" required>
+				<option value="">CITY</option>
+				<option value="Mumbai">Mumbai</option>
+				<option value="Kolkata">Kolkata</option>
+				<option value="Lucknow">Lucknow</option>
+				<option value="Ahmadabad">Ahmadabad</option>
+			</select>
+		</div>
+		
+		<br>
+		
+		<div>
+			<label for="cage">Age :</label> 
+			<input type="number" id="cage" name="cage" value="" required min="18" max="75"> 
+		</div>
 
-      <div class="form-item">
-        <label>Address 2 (Optional)</label>
-        <input autocomplete="nope" type="text" id="address_2" name="address_2">
-      </div>
-
-      <input type="submit" id="submit" name="submit" value="Submit">
-
-      <div class="thank-msg">Your message has been sent Successfully.<span class="msg-close">&times;</span></div>
-    </form>
-
-  </body>
-
+		<br>
+		
+		<div>
+			<label for="cdate">DOB :</label> 
+			<input type="date" id="cdate" name="cdate">
+		</div>
+		
+		<br>
+		
+		<div>
+			<label for="aboveinfo">Above Information :</label> 
+			<div>
+				<label>
+					<input type="radio" value="True" name="caboveinfo" required>
+					True
+				</label>
+			</div>
+			<div>
+				<label>
+					<input type="radio" value="False" name="caboveinfo" required>
+					False
+				</label>
+			</div>
+		</div>
+		
+		<br>
+		
+		<div>
+			<label>
+				<input type="checkbox" name="cterms" id="cterms" required>
+				Check yourself
+			</label>
+		</div>
+					
+		<br>
+		
+		<button type="submit" class="submit">SUBMIT</button>
+		
+		<br>
+		
+		<div id="succ"></div>
+		
+	</form>
+	
+</body>
 </html>
