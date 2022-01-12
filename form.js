@@ -112,9 +112,9 @@
 
     function call_request() {
       $.ajax({
-        url: "/form.php",
+        url: "form.php",
         type: "POST",
-        dataType: "json",
+        // dataType: "json",
         data: $("#test").serialize(),
         // headers: {
         //   // 'x-config-token': token,
