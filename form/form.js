@@ -115,11 +115,11 @@
       $.ajax({
         url: "form.php",
         type: "POST",
-        contentType: "application/json; charset=utf-8",
+        dataType: "json",
         data: data,
-        headers: {
-          // 'x-config-token': token,
-        },
+        // headers: {
+        //   // 'x-config-token': token,
+        // },
         success: function(data) {
           var formData = $("form").serializeArray();
           console.log(formData);
