@@ -1,7 +1,7 @@
 (function($) {
   $(document).ready(function() {
 
-    $("form").on("submit", function(e) {
+    $("#test").on("submit", function(e) {
       e.preventDefault();
 
       if ($("#first_name").length) {
@@ -111,7 +111,7 @@
     });
 
     function call_request() {
-      var data = $("form").serialize();
+      var data = $("#test").serialize();
       $.ajax({
         type: "POST",
         contentType: "application/json; charset=utf-8",
@@ -124,7 +124,7 @@
           var formData = $("form").serializeArray();
           console.log(formData);
           // window.location.href = "/demo-example/form/thank-you.html";
-          $("form").get(0).reset();
+          $("#test").get(0).reset();
           $(".thank-msg").fadeIn();
           $('input[type="submit"]').val("Submit").attr("disabled", false);
         },
