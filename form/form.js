@@ -116,8 +116,8 @@
         type: "POST",
         dataType: "json",
         contentType: "application/json; charset=utf-8",
-        url: "form.php",
         data: data,
+        url: "form.php",
         headers: {
           // 'x-config-token': token,
         },
