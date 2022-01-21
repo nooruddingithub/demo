@@ -164,21 +164,16 @@
             clikedForm.get(0).reset();
           },
           error: function(error) {
-            serviceError();
+            clikedForm.find(".tech-error-msg").show();
+            $("html, body").animate({
+              scrollTop: clikedForm.find(".tech-error-msg").offset().top
+            }, 500);
+            clikedForm.find('input[type="submit"]').val("Submit").attr("disabled", false);
           }
         });
       }
 
     });
-
-    // technical service error.
-    function serviceError() {
-      $(".tech-error-msg").show();
-      $("html, body").animate({
-        scrollTop: $(".tech-error-msg").offset().top
-      }, 500);
-      $('input[type="submit"]').val("Submit").attr("disabled", false);
-    }
 
     // validation for radio button.
     $('input[name="gender"]').bind("click", function() {
