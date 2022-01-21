@@ -1,0 +1,24 @@
+Script for tempermonkey
+var link = document.createElement('link');
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = 'http://localhost/prevnar/brand.css';
+document.getElementsByTagName("head")[0].appendChild(link);
+
+var link2 = document.createElement('script');
+link2.type = 'text/javascript';
+link2.src = 'http://localhost/prevnar/brand.js';
+document.getElementsByTagName("head")[0].appendChild(link2);
+
+
+
+ var meta = document.createElement('meta');
+    meta.setAttribute("http-equiv", "Content-Security-Policy");
+    meta.setAttribute("content", "default-src 'self'");
+    document.getElementsByTagName('head')[0].appendChild(meta);
+
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://localhost/test/test.css';
+    document.getElementsByTagName("head")[0].appendChild(link);

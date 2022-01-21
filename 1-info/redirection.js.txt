@@ -1,0 +1,44 @@
+var urlLink = $(location).attr('href'),
+partsLink = urlLink.split("/"),
+last_part_link = partsLink[partsLink.length-1];
+
+if(last_part_link == "enroll"){
+    $(location).attr('href',partsLink[0]+'/sites/default/files/Pfizer_Oncology_Together_Enrollment_Form.pdf');
+}
+
+if(last_part_link == "NivestymCopaySPFaxForm"){
+    $(location).attr('href',partsLink[0]+'/sites/default/files/NIVESTYM_Co-Pay_Savings_Program_Specialty_Pharmacy_Form.pdf');
+}
+
+if(last_part_link == "Tracker"){
+    $(location).attr('href',partsLink[0]+'/sites/default/files/Medicine_Tracker.pdf');
+}
+
+if(last_part_link == "access-guide"){
+    $(location).attr('href',partsLink[0]+'/sites/default/files/Pfizer_Oncology_Patient_Access_Guide.pdf');
+}
+
+if(last_part_link == "terms-for-injectables"){
+    $(location).attr('href',partsLink[0]+'/hcp/patient-financial-assistance#co-pay-assistance');
+}
+
+if(last_part_link == "patient-financial-assistance#commercially-insured"){
+    $(location).attr('href',partsLink[0]+'/hcp/patient-financial-assistance#co-pay-assistance');
+}
+
+if(last_part_link == "injectables-terms"){
+    $(location).attr('href',partsLink[0]+'/patient/financial-assistance#commercially-insured');
+}
+
+if(last_part_link == "CoPaySavings"){
+    $(location).attr('href',partsLink[0]+'/patient/financial-assistance#financial-copay');
+}
+
+if(last_part_link == "Resources"){
+    $(location).attr('href',partsLink[0]+'/patient/personalized-support#downloadable-resources');
+}
+
+
+
+
+
