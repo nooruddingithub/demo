@@ -1,0 +1,991 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<title>:: Book at Home ::</title>
+
+<!--SET: FAVICON-->
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!--END: FAVICON-->
+
+<!--SET: STYLESHEET-->
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+<link type="text/css" rel="stylesheet" href="css/menuzord.css">
+<link type="text/css" rel="stylesheet" href="fancybox/jquery.fancybox.css">
+<link type="text/css" rel="stylesheet" href="css/flexslider.css">
+<link type="text/css" rel="stylesheet" href="css/customStyle.css">
+<!--END: STYLESHEET-->
+
+<!--SET: SCRIPTS-->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyloadxt.js"></script>
+<script type="text/javascript" src="js/menuzord.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<!--END: SCRIPTS-->
+
+</head>
+
+<body>
+
+<!--start header-->
+<header class="headerCustom">
+    <div class="headerbarbg">
+        <div class="container">
+            <div class="displayflex">
+                <div></div>
+                <div>
+                    <ul class="headerbarmenu">
+                        <li><a href="">Track Order</a></li>
+                        <li><a href="">Signup</a></li>
+                        <li><a href="login.html" class="fancybox fancybox.iframe">Login/Signup</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="topSticky">
+        <div class="container">
+            <div class="row">
+                <div class="cell">
+                    <div class="col-xs-12">
+                        <a class="logo" href="#" title="Book At Home"><img src="images/logo.png" alt="Book At Home"></a>
+                    </div>
+                </div>
+                <div class="cell block" id="custom-search-input">
+                    <div class="input-group col-xs-12">
+                        <input type="text" class="  search-query form-control" placeholder="Search" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button">
+                                <span class=" glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="col-xs-12 addtoCart">
+                        <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
+                          <i class="fa fa-shopping-cart"></i> <span class="txtCart">Cart</span> 
+                          <span class="badge">4</span>
+                        </button>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">
+									<span class="cell">
+										<span class="thumbnail">
+											<img src="images/product/mobile/1.jpg">
+										</span>	
+									</span>
+									<span class="cell block">
+										<span class="col-sm-12">
+											<h5><b>Mobile</b></h5>
+											<h5>Dropdown link gfdsgs dgfdg dfg fdg fdg</h5>
+										</span>
+									</span>
+									<span class="cell">
+										<span class="col-xs-12">
+											<h5><b>25.00</b></h5>
+										</span>
+									</span>
+									<span class="cell">
+										<button type="button" class="btn btn-link">
+											<span class="glyphicon glyphicon-remove"></span>
+										</button>
+									</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="cell">
+										<span class="thumbnail">
+											<img src="images/product/mobile/1.jpg">
+										</span>	
+									</span>
+									<span class="cell block">
+										<span class="col-sm-12">
+											<h5><b>Mobile</b></h5>
+											<h5>Dropdown link gfdsgs dgfdg dfg fdg fdg</h5>
+										</span>
+									</span>
+									<span class="cell">
+										<span class="col-xs-12">
+											<h5><b>25.00</b></h5>
+										</span>
+									</span>
+									<span class="cell">
+										<button type="button" class="btn btn-link">
+											<span class="glyphicon glyphicon-remove"></span>
+										</button>
+									</span>
+								</a>
+							</li>
+							<li>
+								<hr>
+								<span class="cell">
+									<span class="col-xs-12">
+										<h5><strong>Total</strong></h5>
+									</span>
+								</span>
+								<span class="cell block text-right">
+									<span class="col-xs-12">
+										<h5>Rs <strong>234.00</strong></h5>
+									</span>
+								</span>
+								<span class="cell">
+									<span class="col-xs-12">
+										<button type="button" class="btn btn-success">Checkout</button>
+									</span>
+								</span>
+							</li>
+						</ul>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <div class="menuWrap">
+        <div class="container">
+            <div id="menuzord" class="menuzord red">
+                <ul class="menuzord-menu">
+                    <li><a href="javascript:void(0)">Home</a></li>
+                    <li><a href="javascript:void(0)">Electronics</a>
+                        <div class="megamenu">
+                            <div class="megamenu-row">
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web development</h5></li>
+                                        <li><a href="#">Website design</a></li>
+																				<ul class="list-unstyled">
+																						<li><h5>Web development</h5></li>
+																						<li><a href="#">Website design</a></li>
+																						<li><a href="#">ECommerce</a></li>
+																						<li><a href="#">Website Maintenance</a></li>
+																						<li><a href="#">Web Enhancements</a></li>
+																				</ul>
+                                        <li><a href="#">ECommerce</a></li>
+                                        <li><a href="#">Website Maintenance</a></li>
+                                        <li><a href="#">Web Enhancements</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Hosting</h5></li>
+                                        <li><a href="#">Website Hosting</a></li>
+                                        <li><a href="#">WordPress Hosting</a></li>
+                                        <li><a href="#">SharePoint Hosting</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Design services</h5></li>
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web Marketing</h5></li>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Search Engine Marketing</a></li>
+                                        <li><a href="#">Email Marketing</a></li>
+                                        <li><a href="#">Optimization (SEO)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Email services</h5></li>
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Microsoft Exchange</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Security services</h5></li>
+                                        <li><a href="#">SSL Certificates</a></li>
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">Security and Performance</a></li>
+                                        <li><a href="#">Privacy Seal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="javascript:void(0)">Men</a>
+                        <div class="megamenu">
+                            <div class="megamenu-row">
+                                <div class="col2">
+								
+								</div>
+								<div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web development</h5></li>
+                                        <li><a href="#">Website design</a></li>
+                                        <li><a href="#">ECommerce</a></li>
+                                        <li><a href="#">Website Maintenance</a></li>
+                                        <li><a href="#">Web Enhancements</a></li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  ><a href="javascript:void(0)">Women</a>
+                        <div class="megamenu">
+                            <div class="megamenu-row">
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web development</h5></li>
+                                        <li><a href="#">Website design</a></li>
+                                        <li><a href="#">ECommerce</a></li>
+                                        <li><a href="#">Website Maintenance</a></li>
+                                        <li><a href="#">Web Enhancements</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Hosting</h5></li>
+                                        <li><a href="#">Website Hosting</a></li>
+                                        <li><a href="#">WordPress Hosting</a></li>
+                                        <li><a href="#">SharePoint Hosting</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Design services</h5></li>
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web Marketing</h5></li>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Search Engine Marketing</a></li>
+                                        <li><a href="#">Email Marketing</a></li>
+                                        <li><a href="#">Optimization (SEO)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Email services</h5></li>
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Microsoft Exchange</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Security services</h5></li>
+                                        <li><a href="#">SSL Certificates</a></li>
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">Security and Performance</a></li>
+                                        <li><a href="#">Privacy Seal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  ><a href="javascript:void(0)">Sport &amp; Health</a>
+                        <div class="megamenu">
+                            <div class="megamenu-row">
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web development</h5></li>
+                                        <li><a href="#">Website design</a></li>
+                                        <li><a href="#">ECommerce</a></li>
+                                        <li><a href="#">Website Maintenance</a></li>
+                                        <li><a href="#">Web Enhancements</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Hosting</h5></li>
+                                        <li><a href="#">Website Hosting</a></li>
+                                        <li><a href="#">WordPress Hosting</a></li>
+                                        <li><a href="#">SharePoint Hosting</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Design services</h5></li>
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web Marketing</h5></li>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Search Engine Marketing</a></li>
+                                        <li><a href="#">Email Marketing</a></li>
+                                        <li><a href="#">Optimization (SEO)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Email services</h5></li>
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Microsoft Exchange</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Security services</h5></li>
+                                        <li><a href="#">SSL Certificates</a></li>
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">Security and Performance</a></li>
+                                        <li><a href="#">Privacy Seal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  ><a href="javascript:void(0)">Baby, Kids &amp; Toys</a>
+                        <div class="megamenu">
+                            <div class="megamenu-row">
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web development</h5></li>
+                                        <li><a href="#">Website design</a></li>
+                                        <li><a href="#">ECommerce</a></li>
+                                        <li><a href="#">Website Maintenance</a></li>
+                                        <li><a href="#">Web Enhancements</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Hosting</h5></li>
+                                        <li><a href="#">Website Hosting</a></li>
+                                        <li><a href="#">WordPress Hosting</a></li>
+                                        <li><a href="#">SharePoint Hosting</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Design services</h5></li>
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web Marketing</h5></li>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Search Engine Marketing</a></li>
+                                        <li><a href="#">Email Marketing</a></li>
+                                        <li><a href="#">Optimization (SEO)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Email services</h5></li>
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Microsoft Exchange</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Security services</h5></li>
+                                        <li><a href="#">SSL Certificates</a></li>
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">Security and Performance</a></li>
+                                        <li><a href="#">Privacy Seal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  ><a href="javascript:void(0)">Books</a>
+                        <div class="megamenu">
+                            <div class="megamenu-row">
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web development</h5></li>
+                                        <li><a href="#">Website design</a></li>
+                                        <li><a href="#">ECommerce</a></li>
+                                        <li><a href="#">Website Maintenance</a></li>
+                                        <li><a href="#">Web Enhancements</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Hosting</h5></li>
+                                        <li><a href="#">Website Hosting</a></li>
+                                        <li><a href="#">WordPress Hosting</a></li>
+                                        <li><a href="#">SharePoint Hosting</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Design services</h5></li>
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web Marketing</h5></li>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Search Engine Marketing</a></li>
+                                        <li><a href="#">Email Marketing</a></li>
+                                        <li><a href="#">Optimization (SEO)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Email services</h5></li>
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Microsoft Exchange</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Security services</h5></li>
+                                        <li><a href="#">SSL Certificates</a></li>
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">Security and Performance</a></li>
+                                        <li><a href="#">Privacy Seal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li  ><a href="javascript:void(0)">Kitchen &amp; Furniture</a>
+                        <div class="megamenu">
+                            <div class="megamenu-row">
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web development</h5></li>
+                                        <li><a href="#">Website design</a></li>
+                                        <li><a href="#">ECommerce</a></li>
+                                        <li><a href="#">Website Maintenance</a></li>
+                                        <li><a href="#">Web Enhancements</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Hosting</h5></li>
+                                        <li><a href="#">Website Hosting</a></li>
+                                        <li><a href="#">WordPress Hosting</a></li>
+                                        <li><a href="#">SharePoint Hosting</a></li>
+                                        <li><a href="#">VPS Hosting</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Design services</h5></li>
+                                        <li><a href="#">Graphics</a></li>
+                                        <li><a href="#">Vectors</a></li>
+                                        <li><a href="#">Business cards</a></li>
+                                        <li><a href="#">Custom logo</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Web Marketing</h5></li>
+                                        <li><a href="#">Facebook</a></li>
+                                        <li><a href="#">Search Engine Marketing</a></li>
+                                        <li><a href="#">Email Marketing</a></li>
+                                        <li><a href="#">Optimization (SEO)</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Email services</h5></li>
+                                        <li><a href="#">Personal Email</a></li>
+                                        <li><a href="#">Business Email</a></li>
+                                        <li><a href="#">Mobile Email</a></li>
+                                        <li><a href="#">Microsoft Exchange</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col2">
+                                    <ul class="list-unstyled">
+                                        <li><h5>Security services</h5></li>
+                                        <li><a href="#">SSL Certificates</a></li>
+                                        <li><a href="#">Site Seal</a></li>
+                                        <li><a href="#">Security and Performance</a></li>
+                                        <li><a href="#">Privacy Seal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">More</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>   
+<!--end header-->
+
+<!--start item-->
+<section class="itemSection">
+    <div class="container">
+    	<div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/8.jpg">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/2.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/3.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/4.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/5.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/6.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/7.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/8.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/9.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/1.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/2.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <img data-src="images/product/mobile/3.jpg" alt="Title">
+                    <div class="caption">
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <h4>Galaxy S5</h4>
+                            </div>
+                            <div class="flexblock">
+                                <h4><label>$649.99</label></h4>
+                            </div>
+                        </div>
+                        <p>32GB, 2GB Ram, 1080HD, 5.1 inches, Android</p>
+                        <div class="displayflex">
+                            <div class="flexblock">
+                                <a href="productdetail.html" class="btn btn-warning btn-block fancybox fancybox.iframe">
+                                    Quick View
+                                </a> 
+                            </div>
+                            <div class="flexblock">
+                                <a href="#" class="btn btn-success btn-block">
+                                    Add to Cart
+                                </a>
+                            </div>                        
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end item-->
+
+<!--start footer-->
+<footer class="footerCustom">
+    <!--start footerTop-->
+    <div class="footerTop">
+        <div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h5>Category</h5>
+							<ul class="fmenu">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Electronics</a></li>
+								<li><a href="#">Men</a></li>
+								<li><a href="#">Women</a></li>
+								<li><a href="#">Sport &amp; Health</a></li>
+								<li><a href="#">Baby, Kids &amp; Toys</a></li>
+								<li><a href="#">Books</a></li>
+								<li><a href="#">Kitchen &amp; Furniture</a></li>
+								<li><a href="#">More</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h5>Book At Home</h5>
+							<ul class="fmenu">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">FAQ</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h5>Services</h5>
+							<ul class="fmenu">
+								<li><a href="#">Online Shopping</a></li>
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Cancellation &amp; Returns</a></li>
+								<li><a href="#">Saved Cards</a></li>
+								<li><a href="#">Online Payment</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+							<h5>Follow us on</h5>
+							<ul class="list-inline social">
+								<li>
+									<a class="social-icon facebook" href="#">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a class="social-icon linkedin" href="#">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a class="social-icon twitter" href="#">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a class="social-icon youtube" href="#">
+										<i class="fa fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+        </div>
+    </div>
+
+    <div class="footerBotom">
+      <div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<p class="copyright xs-center">Copyright &copy; 2019 Book At Home. All Rights Reserved.</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<p class="copyright desktop-text-right xs-center">Powered by BEAMTECH</p>
+					</div>
+				</div>
+			</div>	
+    </div>
+
+</footer>
+<!--end footer-->
+<a class="scrollToTop"><i class="fa fa-arrow-up"></i></a>
+
+</body>
+</html>

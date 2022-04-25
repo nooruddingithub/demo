@@ -1,0 +1,335 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background:#2c2c2c;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#header-wrap img {
+	width: 229px;
+}
+
+
+#wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav{display: block}
+
+.navbar-brand {
+    display: block;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#top-menu, #bottom-menu{
+    background-color: #393a4c;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+#text-wrap{
+    background-color: #393a4c;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #8185a0;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+a, a:hover {
+    color: #393a4c
+}
+
+#text-wrap a {
+    color: #8185a0;
+}
+
+#text-wrap a:hover{
+    color: #fff;
+}
+
+.right{
+    text-align: right;
+}
+
+.content{
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+#top-menu ul, #bottom-menu ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#top-menu ul li, #bottom-menu ul li{
+    list-style: none;
+    float: left;
+}
+
+
+
+#top-menu ul li a, #bottom-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+
+#top-menu ul li.active a, #top-menu ul li a:hover, #bottom-menu ul li.active a, #bottom-menu ul li a:hover {
+    background: #43455a;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#top-menu ul li.active-r.alert{
+    float: right;
+}
+
+#top-menu ul li.active-r.alert a, #top-menu ul li.active-r.alert a:hover {
+    background: #669ed7;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#slogan{
+    background: url('/public/images/calls-online/main-img.jpg') repeat-y top center;
+    padding: 50px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+#slogan section h1 {
+    margin: 5px 0;
+}
+
+#slogan section p{
+    margin-bottom: 0;
+}
+
+#slogan section{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 25px;
+    color: #393a4c;
+}
+
+#phone-wrap{
+    margin-bottom: 25px;
+	overflow:hidden;
+}
+
+#phone{
+    margin: 0 auto;
+    display: block;
+    width: 336px;
+    height: 613px;
+    background: url('../images/phone-bg.jpg') no-repeat top center;
+    position: relative;
+}
+
+#phone-inner{
+    position: absolute;
+    top: 105px;
+    left: 27px;
+    width: 288px;
+}
+
+#phone-inner #phone-btn-wrap {
+    left: 0px;
+    bottom: 0px;
+}
+
+#phone-inner #phone-btn-wrap a {
+    display: block;
+    width: 96px;
+    height: 55px;
+    float: left;
+    background: url('../images/phone-btn-sprite.jpg') no-repeat 0px 0px;
+}
+
+#phone-inner #phone-btn-wrap a:hover, .callHang div:hover{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+}
+
+#phone-inner #phone-btn-wrap #one {
+    background-position: 0px 0px;
+}
+
+#phone-inner #phone-btn-wrap #two {
+    background-position: -96px 0px;
+}
+
+#phone-inner #phone-btn-wrap #three {
+    background-position: -192px 0px;
+}
+
+#phone-inner #phone-btn-wrap #four {
+    background-position: 0px -55px;
+}
+
+#phone-inner #phone-btn-wrap #five {
+    background-position: -96px -55px;
+}
+
+#phone-inner #phone-btn-wrap #six {
+    background-position: -192px -55px;
+}
+
+
+#phone-inner #phone-btn-wrap #seven {
+    background-position: 0px -110px;
+}
+
+#phone-inner #phone-btn-wrap #eight {
+    background-position: -96px -110px;
+}
+
+#phone-inner #phone-btn-wrap #nine {
+    background-position: -192px -110px;
+}
+
+
+#phone-inner #phone-btn-wrap #aster {
+    background-position: 0px -165px;
+}
+
+#phone-inner #phone-btn-wrap #zero {
+    background-position: -96px -165px;
+}
+
+#phone-inner #phone-btn-wrap #pound {
+    background-position: -192px -165px;
+}
+
+
+
+#phone-inner #phone-btn-wrap span{
+    display: none;
+}
+
+
+.callHang div{
+    width: 144px;
+    height: 55px;
+    background: url('../images/call-btn-sprite.jpg') no-repeat 0px 0px;
+    border: 0;
+}
+
+.callHang div.hang{
+    background-position: -144px 0px;
+}
+
+#like-btn-wrap {
+    width: 358px;
+    margin: 0px auto;
+    padding-bottom: 15px;
+}
+
+#vk-comment-wrap{
+    margin: 25px 0px;
+    margin-top: 0px;
+}
+
+.top-page-img{
+    width:100%;
+    border-radius: 5px
+}
+
+#add-funds{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #669ed7;
+    padding: 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    outline: none;
+    text-decoration: none;
+}
+
+#add-funds span{
+    text-decoration: underline;
+}
+
+#add-funds:hover{
+    background: #00acee;
+}
+
+ .breadcrumb{
+	list-style: none outside none; margin:0; padding: 0; 
+}
+
+.breadcrumb li {
+	margin: 0; display: inline;
+}
+
+.breadcrumb li.separator{
+	margin: 0 5px;
+}
+
+#error-block{
+    padding: 15px;
+    color: #fff;
+    background-color: #c0392b;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+#error-block p {
+    padding: 0;
+    margin: 0;
+}
+
+.adblock{
+    background: url('/public/images/calls-online/adblock.jpg') no-repeat 50px 0px;
+    /*width: 100%;*/
+    min-height: 215px;
+    color: #fff;
+    padding-left: 300px;
+    font-size: 150%;
+}
+
+.adblock a, .adblock a:hover {
+    color:#fff;
+    font-size: 80%;
+}
+
+table.tableizer-table{
+    border-spacing: 0px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+table.tableizer-table td {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    vertical-align: top;
+    padding: 5px;
+}

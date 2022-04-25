@@ -1,0 +1,383 @@
+div.selector {
+    height: 60px;
+    width: 50px;
+    float: left;
+}
+
+div.selector .indicator {
+    display: block;
+    height: 60px;
+    color: #000;
+    text-decoration: none;
+    padding: 0 22px 0 0;
+    line-height: 60px;
+	background: url('../images/down-btn.png') right center no-repeat;
+	
+	overflow: hidden;
+}
+
+div.selector .indicator span {
+    border: none;
+    display: block;
+    height: 20px;
+    padding: 0 0 0 23px;
+    left: 4px;
+    top: 20px;
+    position: relative;
+	font-size: 0px;
+}
+
+div.selector .list {
+    background-color: #fff;
+    border-left: solid 1px #999;
+    border-right: solid 1px #999;
+    border-bottom: solid 1px #999;
+    max-height: 300px;
+    overflow: auto;
+    z-index: 10000;
+	
+}
+
+div.selector .list a.item {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    line-height: 22px;
+    margin: 0;
+    padding: 0 3px 0 23px;
+    background-position: 2px 6px;
+	text-align: left;
+	font-family: arial;
+	font-size: 14px;
+}
+
+div.selector .list a.item:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+div.selector .list a.empty:hover {
+    color: #000;
+    background-color: transparent;
+}
+
+
+div.selector .list a.item{
+	background-repeat: no-repeat;
+}
+
+div.selector .indicator span{background-repeat: no-repeat;background-size: 90%;}
+div.selector .list a.item.us, div.selector .indicator span.us{background-image: url(../images/flags/us.gif);}
+div.selector .list a.item.af, div.selector .indicator span.af{background-image: url(../images/flags/af.gif);}
+div.selector .list a.item.al, div.selector .indicator span.al{background-image: url(../images/flags/al.gif);}
+div.selector .list a.item.dz, div.selector .indicator span.dz{background-image: url(../images/flags/dz.gif);}
+div.selector .list a.item.as, div.selector .indicator span.as{background-image: url(../images/flags/as.gif);}
+div.selector .list a.item.ad, div.selector .indicator span.ad{background-image: url(../images/flags/ad.gif);}
+div.selector .list a.item.ao, div.selector .indicator span.ao{background-image: url(../images/flags/ao.gif);}
+div.selector .list a.item.ai, div.selector .indicator span.ai{background-image: url(../images/flags/ai.gif);}
+div.selector .list a.item.aq, div.selector .indicator span.aq{background-image: url(../images/flags/aq.gif);}
+div.selector .list a.item.ag, div.selector .indicator span.ag{background-image: url(../images/flags/ag.gif);}
+div.selector .list a.item.ar, div.selector .indicator span.ar{background-image: url(../images/flags/ar.gif);}
+div.selector .list a.item.am, div.selector .indicator span.am{background-image: url(../images/flags/am.gif);}
+div.selector .list a.item.aw, div.selector .indicator span.aw{background-image: url(../images/flags/aw.gif);}
+div.selector .list a.item.gb, div.selector .indicator span.gb{background-image: url(../images/flags/gb.gif);}
+div.selector .list a.item.au, div.selector .indicator span.au{background-image: url(../images/flags/au.gif);}
+div.selector .list a.item.at, div.selector .indicator span.at{background-image: url(../images/flags/at.gif);}
+div.selector .list a.item.az, div.selector .indicator span.az{background-image: url(../images/flags/az.gif);}
+div.selector .list a.item.pt, div.selector .indicator span.pt{background-image: url(../images/flags/pt.gif);}
+div.selector .list a.item.bs, div.selector .indicator span.bs{background-image: url(../images/flags/bs.gif);}
+div.selector .list a.item.bh, div.selector .indicator span.bh{background-image: url(../images/flags/bh.gif);}
+div.selector .list a.item.bd, div.selector .indicator span.bd{background-image: url(../images/flags/bd.gif);}
+div.selector .list a.item.bb, div.selector .indicator span.bb{background-image: url(../images/flags/bb.gif);}
+div.selector .list a.item.by, div.selector .indicator span.by{background-image: url(../images/flags/by.gif);}
+div.selector .list a.item.be, div.selector .indicator span.be{background-image: url(../images/flags/be.gif);}
+div.selector .list a.item.bz, div.selector .indicator span.bz{background-image: url(../images/flags/bz.gif);}
+div.selector .list a.item.bj, div.selector .indicator span.bj{background-image: url(../images/flags/bj.gif);}
+div.selector .list a.item.bm, div.selector .indicator span.bm{background-image: url(../images/flags/bm.gif);}
+div.selector .list a.item.bt, div.selector .indicator span.bt{background-image: url(../images/flags/bt.gif);}
+div.selector .list a.item.bo, div.selector .indicator span.bo{background-image: url(../images/flags/bo.gif);}
+div.selector .list a.item.ba, div.selector .indicator span.ba{background-image: url(../images/flags/ba.gif);}
+div.selector .list a.item.bw, div.selector .indicator span.bw{background-image: url(../images/flags/bw.gif);}
+div.selector .list a.item.br, div.selector .indicator span.br{background-image: url(../images/flags/br.gif);}
+div.selector .list a.item.vg, div.selector .indicator span.vg{background-image: url(../images/flags/vg.gif);}
+div.selector .list a.item.bn, div.selector .indicator span.bn{background-image: url(../images/flags/bn.gif);}
+div.selector .list a.item.bg, div.selector .indicator span.bg{background-image: url(../images/flags/bg.gif);}
+div.selector .list a.item.bf, div.selector .indicator span.bf{background-image: url(../images/flags/bf.gif);}
+div.selector .list a.item.bi, div.selector .indicator span.bi{background-image: url(../images/flags/bi.gif);}
+div.selector .list a.item.kh, div.selector .indicator span.kh{background-image: url(../images/flags/kh.gif);}
+div.selector .list a.item.cm, div.selector .indicator span.cm{background-image: url(../images/flags/cm.gif);}
+div.selector .list a.item.ca, div.selector .indicator span.ca{background-image: url(../images/flags/ca.gif);}
+div.selector .list a.item.es, div.selector .indicator span.es{background-image: url(../images/flags/es.gif);}
+div.selector .list a.item.cv, div.selector .indicator span.cv{background-image: url(../images/flags/cv.gif);}
+div.selector .list a.item.ky, div.selector .indicator span.ky{background-image: url(../images/flags/ky.gif);}
+div.selector .list a.item.cf, div.selector .indicator span.cf{background-image: url(../images/flags/cf.gif);}
+div.selector .list a.item.td, div.selector .indicator span.td{background-image: url(../images/flags/td.gif);}
+div.selector .list a.item.nz, div.selector .indicator span.nz{background-image: url(../images/flags/nz.gif);}
+div.selector .list a.item.cl, div.selector .indicator span.cl{background-image: url(../images/flags/cl.gif);}
+div.selector .list a.item.cl, div.selector .indicator span.cl{background-image: url(../images/flags/cl.gif);}
+div.selector .list a.item.cn, div.selector .indicator span.cn{background-image: url(../images/flags/cn.gif);}
+div.selector .list a.item.cx, div.selector .indicator span.cx{background-image: url(../images/flags/cx.gif);}
+div.selector .list a.item.cc, div.selector .indicator span.cc{background-image: url(../images/flags/cc.gif);}
+div.selector .list a.item.co, div.selector .indicator span.co{background-image: url(../images/flags/co.gif);}
+div.selector .list a.item.km, div.selector .indicator span.km{background-image: url(../images/flags/km.gif);}
+div.selector .list a.item.cg, div.selector .indicator span.cg{background-image: url(../images/flags/cg.gif);}
+div.selector .list a.item.ck, div.selector .indicator span.ck{background-image: url(../images/flags/ck.gif);}
+div.selector .list a.item.cr, div.selector .indicator span.cr{background-image: url(../images/flags/cr.gif);}
+div.selector .list a.item.hr, div.selector .indicator span.hr{background-image: url(../images/flags/hr.gif);}
+div.selector .list a.item.cu, div.selector .indicator span.cu{background-image: url(../images/flags/cu.gif);}
+div.selector .list a.item.cy, div.selector .indicator span.cy{background-image: url(../images/flags/cy.gif);}
+div.selector .list a.item.cy, div.selector .indicator span.cy{background-image: url(../images/flags/cy.gif);}
+div.selector .list a.item.cz, div.selector .indicator span.cz{background-image: url(../images/flags/cz.gif);}
+div.selector .list a.item.dr, div.selector .indicator span.dr{background-image: url(../images/flags/dr.gif);}
+div.selector .list a.item.dk, div.selector .indicator span.dk{background-image: url(../images/flags/dk.gif);}
+div.selector .list a.item.gb, div.selector .indicator span.gb{background-image: url(../images/flags/gb.gif);}
+div.selector .list a.item.dj, div.selector .indicator span.dj{background-image: url(../images/flags/dj.gif);}
+div.selector .list a.item.dm, div.selector .indicator span.dm{background-image: url(../images/flags/dm.gif);}
+div.selector .list a.item.do, div.selector .indicator span.do{background-image: url(../images/flags/do.gif);}
+div.selector .list a.item.tl, div.selector .indicator span.tl{background-image: url(../images/flags/tl.gif);}
+div.selector .list a.item.ec, div.selector .indicator span.ec{background-image: url(../images/flags/ec.gif);}
+div.selector .list a.item.eg, div.selector .indicator span.eg{background-image: url(../images/flags/eg.gif);}
+div.selector .list a.item.sv, div.selector .indicator span.sv{background-image: url(../images/flags/sv.gif);}
+div.selector .list a.item.gq, div.selector .indicator span.gq{background-image: url(../images/flags/gq.gif);}
+div.selector .list a.item.er, div.selector .indicator span.er{background-image: url(../images/flags/er.gif);}
+div.selector .list a.item.ee, div.selector .indicator span.ee{background-image: url(../images/flags/ee.gif);}
+div.selector .list a.item.et, div.selector .indicator span.et{background-image: url(../images/flags/et.gif);}
+div.selector .list a.item.dk, div.selector .indicator span.dk{background-image: url(../images/flags/dk.gif);}
+div.selector .list a.item.fk, div.selector .indicator span.fk{background-image: url(../images/flags/fk.gif);}
+div.selector .list a.item.fj, div.selector .indicator span.fj{background-image: url(../images/flags/fj.gif);}
+div.selector .list a.item.fi, div.selector .indicator span.fi{background-image: url(../images/flags/fi.gif);}
+div.selector .list a.item.fr, div.selector .indicator span.fr{background-image: url(../images/flags/fr.gif);}
+div.selector .list a.item.gf, div.selector .indicator span.gf{background-image: url(../images/flags/gf.gif);}
+div.selector .list a.item.pf, div.selector .indicator span.pf{background-image: url(../images/flags/pf.gif);}
+div.selector .list a.item.ga, div.selector .indicator span.ga{background-image: url(../images/flags/ga.gif);}
+div.selector .list a.item.gm, div.selector .indicator span.gm{background-image: url(../images/flags/gm.gif);}
+div.selector .list a.item.ge, div.selector .indicator span.ge{background-image: url(../images/flags/ge.gif);}
+div.selector .list a.item.de, div.selector .indicator span.de{background-image: url(../images/flags/de.gif);}
+div.selector .list a.item.gh, div.selector .indicator span.gh{background-image: url(../images/flags/gh.gif);}
+div.selector .list a.item.gi, div.selector .indicator span.gi{background-image: url(../images/flags/gi.gif);}
+div.selector .list a.item.gr, div.selector .indicator span.gr{background-image: url(../images/flags/gr.gif);}
+div.selector .list a.item.gl, div.selector .indicator span.gl{background-image: url(../images/flags/gl.gif);}
+div.selector .list a.item.gd, div.selector .indicator span.gd{background-image: url(../images/flags/gd.gif);}
+div.selector .list a.item.gp, div.selector .indicator span.gp{background-image: url(../images/flags/gp.gif);}
+div.selector .list a.item.gu, div.selector .indicator span.gu{background-image: url(../images/flags/gu.gif);}
+div.selector .list a.item.us, div.selector .indicator span.us{background-image: url(../images/flags/us.gif);}
+div.selector .list a.item.gt, div.selector .indicator span.gt{background-image: url(../images/flags/gt.gif);}
+div.selector .list a.item.gn, div.selector .indicator span.gn{background-image: url(../images/flags/gn.gif);}
+div.selector .list a.item.gw, div.selector .indicator span.gw{background-image: url(../images/flags/gw.gif);}
+div.selector .list a.item.gy, div.selector .indicator span.gy{background-image: url(../images/flags/gy.gif);}
+div.selector .list a.item.ht, div.selector .indicator span.ht{background-image: url(../images/flags/ht.gif);}
+div.selector .list a.item.hn, div.selector .indicator span.hn{background-image: url(../images/flags/hn.gif);}
+div.selector .list a.item.hk, div.selector .indicator span.hk{background-image: url(../images/flags/hk.gif);}
+div.selector .list a.item.hu, div.selector .indicator span.hu{background-image: url(../images/flags/hu.gif);}
+div.selector .list a.item.is, div.selector .indicator span.is{background-image: url(../images/flags/is.gif);}
+div.selector .list a.item.in, div.selector .indicator span.in{background-image: url(../images/flags/in.gif);}
+div.selector .list a.item.id, div.selector .indicator span.id{background-image: url(../images/flags/id.gif);}
+div.selector .list a.item.ir, div.selector .indicator span.ir{background-image: url(../images/flags/ir.gif);}
+div.selector .list a.item.iq, div.selector .indicator span.iq{background-image: url(../images/flags/iq.gif);}
+div.selector .list a.item.ie, div.selector .indicator span.ie{background-image: url(../images/flags/ie.gif);}
+div.selector .list a.item.il, div.selector .indicator span.il{background-image: url(../images/flags/il.gif);}
+div.selector .list a.item.it, div.selector .indicator span.it{background-image: url(../images/flags/it.gif);}
+div.selector .list a.item.va, div.selector .indicator span.va{background-image: url(../images/flags/va.gif);}
+div.selector .list a.item.ci, div.selector .indicator span.ci{background-image: url(../images/flags/ci.gif);}
+div.selector .list a.item.jm, div.selector .indicator span.jm{background-image: url(../images/flags/jm.gif);}
+div.selector .list a.item.jp, div.selector .indicator span.jp{background-image: url(../images/flags/jp.gif);}
+div.selector .list a.item.jo, div.selector .indicator span.jo{background-image: url(../images/flags/jo.gif);}
+div.selector .list a.item.kz, div.selector .indicator span.kz{background-image: url(../images/flags/kz.gif);}
+div.selector .list a.item.ke, div.selector .indicator span.ke{background-image: url(../images/flags/ke.gif);}
+div.selector .list a.item.ki, div.selector .indicator span.ki{background-image: url(../images/flags/ki.gif);}
+div.selector .list a.item.kp, div.selector .indicator span.kp{background-image: url(../images/flags/kp.gif);}
+div.selector .list a.item.kr, div.selector .indicator span.kr{background-image: url(../images/flags/kr.gif);}
+div.selector .list a.item.ko, div.selector .indicator span.ko{background-image: url(../images/flags/ko.gif);}
+div.selector .list a.item.kw, div.selector .indicator span.kw{background-image: url(../images/flags/kw.gif);}
+div.selector .list a.item.kg, div.selector .indicator span.kg{background-image: url(../images/flags/kg.gif);}
+div.selector .list a.item.la, div.selector .indicator span.la{background-image: url(../images/flags/la.gif);}
+div.selector .list a.item.lv, div.selector .indicator span.lv{background-image: url(../images/flags/lv.gif);}
+div.selector .list a.item.lb, div.selector .indicator span.lb{background-image: url(../images/flags/lb.gif);}
+div.selector .list a.item.ls, div.selector .indicator span.ls{background-image: url(../images/flags/ls.gif);}
+div.selector .list a.item.lr, div.selector .indicator span.lr{background-image: url(../images/flags/lr.gif);}
+div.selector .list a.item.ly, div.selector .indicator span.ly{background-image: url(../images/flags/ly.gif);}
+div.selector .list a.item.li, div.selector .indicator span.li{background-image: url(../images/flags/li.gif);}
+div.selector .list a.item.lt, div.selector .indicator span.lt{background-image: url(../images/flags/lt.gif);}
+div.selector .list a.item.lu, div.selector .indicator span.lu{background-image: url(../images/flags/lu.gif);}
+div.selector .list a.item.mo, div.selector .indicator span.mo{background-image: url(../images/flags/mo.gif);}
+div.selector .list a.item.mk, div.selector .indicator span.mk{background-image: url(../images/flags/mk.gif);}
+div.selector .list a.item.mg, div.selector .indicator span.mg{background-image: url(../images/flags/mg.gif);}
+div.selector .list a.item.mw, div.selector .indicator span.mw{background-image: url(../images/flags/mw.gif);}
+div.selector .list a.item.my, div.selector .indicator span.my{background-image: url(../images/flags/my.gif);}
+div.selector .list a.item.mv, div.selector .indicator span.mv{background-image: url(../images/flags/mv.gif);}
+div.selector .list a.item.ml, div.selector .indicator span.ml{background-image: url(../images/flags/ml.gif);}
+div.selector .list a.item.mt, div.selector .indicator span.mt{background-image: url(../images/flags/mt.gif);}
+div.selector .list a.item.mh, div.selector .indicator span.mh{background-image: url(../images/flags/mh.gif);}
+div.selector .list a.item.mq, div.selector .indicator span.mq{background-image: url(../images/flags/mq.gif);}
+div.selector .list a.item.mr, div.selector .indicator span.mr{background-image: url(../images/flags/mr.gif);}
+div.selector .list a.item.mu, div.selector .indicator span.mu{background-image: url(../images/flags/mu.gif);}
+div.selector .list a.item.yt, div.selector .indicator span.yt{background-image: url(../images/flags/yt.gif);}
+div.selector .list a.item.mx, div.selector .indicator span.mx{background-image: url(../images/flags/mx.gif);}
+div.selector .list a.item.fm, div.selector .indicator span.fm{background-image: url(../images/flags/fm.gif);}
+div.selector .list a.item.us, div.selector .indicator span.us{background-image: url(../images/flags/us.gif);}
+div.selector .list a.item.md, div.selector .indicator span.md{background-image: url(../images/flags/md.gif);}
+div.selector .list a.item.mc, div.selector .indicator span.mc{background-image: url(../images/flags/mc.gif);}
+div.selector .list a.item.mn, div.selector .indicator span.mn{background-image: url(../images/flags/mn.gif);}
+div.selector .list a.item.ms, div.selector .indicator span.ms{background-image: url(../images/flags/ms.gif);}
+div.selector .list a.item.ma, div.selector .indicator span.ma{background-image: url(../images/flags/ma.gif);}
+div.selector .list a.item.mz, div.selector .indicator span.mz{background-image: url(../images/flags/mz.gif);}
+div.selector .list a.item.mm, div.selector .indicator span.mm{background-image: url(../images/flags/mm.gif);}
+div.selector .list a.item.na, div.selector .indicator span.na{background-image: url(../images/flags/na.gif);}
+div.selector .list a.item.nr, div.selector .indicator span.nr{background-image: url(../images/flags/nr.gif);}
+div.selector .list a.item.np, div.selector .indicator span.np{background-image: url(../images/flags/np.gif);}
+div.selector .list a.item.an, div.selector .indicator span.an{background-image: url(../images/flags/an.gif);}
+div.selector .list a.item.nl, div.selector .indicator span.nl{background-image: url(../images/flags/nl.gif);}
+div.selector .list a.item.nc, div.selector .indicator span.nc{background-image: url(../images/flags/nc.gif);}
+div.selector .list a.item.nz, div.selector .indicator span.nz{background-image: url(../images/flags/nz.gif);}
+div.selector .list a.item.ni, div.selector .indicator span.ni{background-image: url(../images/flags/ni.gif);}
+div.selector .list a.item.ne, div.selector .indicator span.ne{background-image: url(../images/flags/ne.gif);}
+div.selector .list a.item.ng, div.selector .indicator span.ng{background-image: url(../images/flags/ng.gif);}
+div.selector .list a.item.nu, div.selector .indicator span.nu{background-image: url(../images/flags/nu.gif);}
+div.selector .list a.item.nf, div.selector .indicator span.nf{background-image: url(../images/flags/nf.gif);}
+div.selector .list a.item.mp, div.selector .indicator span.mp{background-image: url(../images/flags/mp.gif);}
+div.selector .list a.item.no, div.selector .indicator span.no{background-image: url(../images/flags/no.gif);}
+div.selector .list a.item.om, div.selector .indicator span.om{background-image: url(../images/flags/om.gif);}
+div.selector .list a.item.pk, div.selector .indicator span.pk{background-image: url(../images/flags/pk.gif);}
+div.selector .list a.item.pw, div.selector .indicator span.pw{background-image: url(../images/flags/pw.gif);}
+div.selector .list a.item.ps, div.selector .indicator span.ps{background-image: url(../images/flags/ps.gif);}
+div.selector .list a.item.pa, div.selector .indicator span.pa{background-image: url(../images/flags/pa.gif);}
+div.selector .list a.item.pg, div.selector .indicator span.pg{background-image: url(../images/flags/pg.gif);}
+div.selector .list a.item.py, div.selector .indicator span.py{background-image: url(../images/flags/py.gif);}
+div.selector .list a.item.pe, div.selector .indicator span.pe{background-image: url(../images/flags/pe.gif);}
+div.selector .list a.item.ph, div.selector .indicator span.ph{background-image: url(../images/flags/ph.gif);}
+div.selector .list a.item.pl, div.selector .indicator span.pl{background-image: url(../images/flags/pl.gif);}
+div.selector .list a.item.pt, div.selector .indicator span.pt{background-image: url(../images/flags/pt.gif);}
+div.selector .list a.item.pt, div.selector .indicator span.pt{background-image: url(../images/flags/pt.gif);}
+div.selector .list a.item.pr, div.selector .indicator span.pr{background-image: url(../images/flags/pr.gif);}
+div.selector .list a.item.qa, div.selector .indicator span.qa{background-image: url(../images/flags/qa.gif);}
+div.selector .list a.item.fr, div.selector .indicator span.fr{background-image: url(../images/flags/fr.gif);}
+div.selector .list a.item.ro, div.selector .indicator span.ro{background-image: url(../images/flags/ro.gif);}
+div.selector .list a.item.ru, div.selector .indicator span.ru{background-image: url(../images/flags/ru.gif);}
+div.selector .list a.item.rw, div.selector .indicator span.rw{background-image: url(../images/flags/rw.gif);}
+div.selector .list a.item.sm, div.selector .indicator span.sm{background-image: url(../images/flags/sm.gif);}
+div.selector .list a.item.st, div.selector .indicator span.st{background-image: url(../images/flags/st.gif);}
+div.selector .list a.item.sa, div.selector .indicator span.sa{background-image: url(../images/flags/sa.gif);}
+div.selector .list a.item.sn, div.selector .indicator span.sn{background-image: url(../images/flags/sn.gif);}
+div.selector .list a.item.rs, div.selector .indicator span.rs{background-image: url(../images/flags/rs.gif);}
+div.selector .list a.item.me, div.selector .indicator span.me{background-image: url(../images/flags/me.gif);}
+div.selector .list a.item.sc, div.selector .indicator span.sc{background-image: url(../images/flags/sc.gif);}
+div.selector .list a.item.sl, div.selector .indicator span.sl{background-image: url(../images/flags/sl.gif);}
+div.selector .list a.item.sg, div.selector .indicator span.sg{background-image: url(../images/flags/sg.gif);}
+div.selector .list a.item.sk, div.selector .indicator span.sk{background-image: url(../images/flags/sk.gif);}
+div.selector .list a.item.si, div.selector .indicator span.si{background-image: url(../images/flags/si.gif);}
+div.selector .list a.item.sb, div.selector .indicator span.sb{background-image: url(../images/flags/sb.gif);}
+div.selector .list a.item.so, div.selector .indicator span.so{background-image: url(../images/flags/so.gif);}
+div.selector .list a.item.za, div.selector .indicator span.za{background-image: url(../images/flags/za.gif);}
+div.selector .list a.item.es, div.selector .indicator span.es{background-image: url(../images/flags/es.gif);}
+div.selector .list a.item.lk, div.selector .indicator span.lk{background-image: url(../images/flags/lk.gif);}
+div.selector .list a.item.sh, div.selector .indicator span.sh{background-image: url(../images/flags/sh.gif);}
+div.selector .list a.item.kn, div.selector .indicator span.kn{background-image: url(../images/flags/kn.gif);}
+div.selector .list a.item.lc, div.selector .indicator span.lc{background-image: url(../images/flags/lc.gif);}
+div.selector .list a.item.pm, div.selector .indicator span.pm{background-image: url(../images/flags/pm.gif);}
+div.selector .list a.item.vc, div.selector .indicator span.vc{background-image: url(../images/flags/vc.gif);}
+div.selector .list a.item.sd, div.selector .indicator span.sd{background-image: url(../images/flags/sd.gif);}
+div.selector .list a.item.sr, div.selector .indicator span.sr{background-image: url(../images/flags/sr.gif);}
+div.selector .list a.item.sz, div.selector .indicator span.sz{background-image: url(../images/flags/sz.gif);}
+div.selector .list a.item.se, div.selector .indicator span.se{background-image: url(../images/flags/se.gif);}
+div.selector .list a.item.ch, div.selector .indicator span.ch{background-image: url(../images/flags/ch.gif);}
+div.selector .list a.item.sy, div.selector .indicator span.sy{background-image: url(../images/flags/sy.gif);}
+div.selector .list a.item.tw, div.selector .indicator span.tw{background-image: url(../images/flags/tw.gif);}
+div.selector .list a.item.tj, div.selector .indicator span.tj{background-image: url(../images/flags/tj.gif);}
+div.selector .list a.item.tz, div.selector .indicator span.tz{background-image: url(../images/flags/tz.gif);}
+div.selector .list a.item.th, div.selector .indicator span.th{background-image: url(../images/flags/th.gif);}
+div.selector .list a.item.tg, div.selector .indicator span.tg{background-image: url(../images/flags/tg.gif);}
+div.selector .list a.item.tk, div.selector .indicator span.tk{background-image: url(../images/flags/tk.gif);}
+div.selector .list a.item.to, div.selector .indicator span.to{background-image: url(../images/flags/to.gif);}
+div.selector .list a.item.tt, div.selector .indicator span.tt{background-image: url(../images/flags/tt.gif);}
+div.selector .list a.item.tn, div.selector .indicator span.tn{background-image: url(../images/flags/tn.gif);}
+div.selector .list a.item.tr, div.selector .indicator span.tr{background-image: url(../images/flags/tr.gif);}
+div.selector .list a.item.tm, div.selector .indicator span.tm{background-image: url(../images/flags/tm.gif);}
+div.selector .list a.item.tc, div.selector .indicator span.tc{background-image: url(../images/flags/tc.gif);}
+div.selector .list a.item.tv, div.selector .indicator span.tv{background-image: url(../images/flags/tv.gif);}
+div.selector .list a.item.ae, div.selector .indicator span.ae{background-image: url(../images/flags/ae.gif);}
+div.selector .list a.item.ug, div.selector .indicator span.ug{background-image: url(../images/flags/ug.gif);}
+div.selector .list a.item.gb, div.selector .indicator span.gb{background-image: url(../images/flags/gb.gif);}
+div.selector .list a.item.ua, div.selector .indicator span.ua{background-image: url(../images/flags/ua.gif);}
+div.selector .list a.item.uy, div.selector .indicator span.uy{background-image: url(../images/flags/uy.gif);}
+div.selector .list a.item.vi, div.selector .indicator span.vi{background-image: url(../images/flags/vi.gif);}
+div.selector .list a.item.uz, div.selector .indicator span.uz{background-image: url(../images/flags/uz.gif);}
+div.selector .list a.item.vu, div.selector .indicator span.vu{background-image: url(../images/flags/vu.gif);}
+div.selector .list a.item.ve, div.selector .indicator span.ve{background-image: url(../images/flags/ve.gif);}
+div.selector .list a.item.vn, div.selector .indicator span.vn{background-image: url(../images/flags/vn.gif);}
+div.selector .list a.item.wf, div.selector .indicator span.wf{background-image: url(../images/flags/wf.gif);}
+div.selector .list a.item.ws, div.selector .indicator span.ws{background-image: url(../images/flags/ws.gif);}
+div.selector .list a.item.ye, div.selector .indicator span.ye{background-image: url(../images/flags/ye.gif);}
+div.selector .list a.item.zm, div.selector .indicator span.zm{background-image: url(../images/flags/zm.gif);}
+div.selector .list a.item.zw, div.selector .indicator span.zw{background-image: url(../images/flags/zw.gif);}
+
+#selector-language a:hover{
+    color: black;
+}
+
+
+
+#phone-number{
+	font-size: 30px;
+	color: #929292;
+	border: none;
+	background-color: transparent;
+	max-width: 220px;
+	float: right;
+	margin-right: 5px;
+	line-height: 30px;
+	height: 58px;
+	outline: 0;
+	margin-left: 5px;
+}
+
+#p-p-wrap{
+	height: 60px;
+	background-color: #2c2c2c;
+}
+
+.p-call-btn{
+	width: 151px;
+	height: 60px;
+	border: 1px solid #cfcfcf;
+	float: left;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.p-call-btn img{
+	margin-top: 10px;
+}
+
+#message-wrapper{
+	padding: 10px;
+	height: 56px;
+	overflow: hidden;
+	background-color: #3e3e3e;
+	font-size: 12px;
+	text-align: left;
+	color: #bcbcbc;
+	font-family: Arial, serif;
+	
+box-shadow: inset 0px 0px 10px 5px rgba(44, 44, 44, 0.75);
+-moz-box-shadow: inset 0px 0px 10px 5px rgba(44, 44, 44, 0.75);
+-webkit-box-shadow: inset 0px 0px 10px 5px rgba(44, 44, 44, 0.75);
+}
+
+
+
+
+
+.call{
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjZBNDE2NTA1MTAyMTFFMzk5NkE4NUE5OTI3MkM4NjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjZBNDE2NTE1MTAyMTFFMzk5NkE4NUE5OTI3MkM4NjMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGNkE0MTY0RTUxMDIxMUUzOTk2QTg1QTk5MjcyQzg2MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGNkE0MTY0RjUxMDIxMUUzOTk2QTg1QTk5MjcyQzg2MyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiWv7zEAAAidSURBVHjatFhrbBxXFT73zp3Hvv2M49hxUeLECU2QWgIKL4nHD1QkUhUIKKQ8WkIbNakICCSExD9EhSpEEQ8hqCiKaH4UBJSHqiiEJApqXWI1DztN3SZug+XEsde7a+/Ozu7OzL2cc2edxG87DiON7NXu3vnud875vu8uuzJ2GFpTHwIhEhCEZbi7lwKDJ8DzR9dfHv3lDxsS2wdT9rafV/18oRoMQ1NyJ1SrOZis9EMsdg8I5oDg3IJybRR4YEDMWoeLSFBKAbDVw2FgAOcC8m7frkqYf3is9ArkywMPxa3OFyyeOiaM9Gs+K8LtDxOMmbiDGyBVFRxzDXDG8X1+V9gRBrJTu954o3j6gIEbN3gSQlW9f7IycL9pNH7PnbhxPGVuOMwYf9ngsTEDLBARrQ6yEsBEsQ8ysS0QR/qCYArfUXCnVDHgwBSHbPGVz9eCqa2OtQYfFeKGBd5pCKWXrgX5hzx/+JOCJS5grU47fM1hMXMVBdVgAqDCka0WfM0QqMTF2Qq5oU3axE5z1n31CUs0gJIhLsf0u3RzrAw3TPo/LqG2M1c6vVPwtvYZgDizwQ/y4Icu2KIZFzXry6+UHQWmkYarxT/srcnJ91g8s+inGRbK4GmwRMsUn7036imsKRTcfixbCfsgSUTVb7bkTWRaIgPFypVk1j1zkIN988ELAaLnhtKHpL1hRCwCnMYVFJbRFk1YunBZxaJS4JdgbOrUo7Uwt8k2GvG7uG+uqCMWfFYoK+Wkve61BQFR+Sr+OGEHy2i4uZOlLsHjMOVdTo2Xeg+YLEEr4ehr7rWkzGVK6c0Knhm2RNMZsbioOSgHIWrHWcg420DKIGKKsQUnKwiyMDp14uuhqmwmcJGugW4DNW/ZGAqyC2mn55pgdl4sa2ZwxWpYwKkNEWRMT968gHCkpfTiBa//KwQkeu3fxuxcGSGgUlYhbnYcs40WuSwF5MzCySsgqDwuGeACNQTlz7lpYRyKWmvywz9C0MUw9PDxNKnGguUOZJkG5+2E/a5/SFxbLFdZaLeMy6hpsTsl6dM8pUOBDZri9x3Br1RGJl88AlzaBotr4Z23m3Edk2f68P8LbvUqrMwjVATMNDOR2sxTOoSKbE5CU3zHnzoyD+7BviuEqlYvFb+tdHTpya1kYtv/afNGbOwErNi0tHIjS5aZ1PVfSF8IVHPi/X/uzOx6RIZBVoNnEWAgGcBbIlAcnNczsZ6/2mYbGCy23JLNRoWehCpuGI6evMhamG74QJbwQdjIUqINZaE59b6/SJCZa5MvPWcok9EkTu9Bhj56572/j5nto6F0NVixGj+nfpqqvKmVmUB4/gjEzA6dGhgzoqYNXGr2LGcMh1UiFDRXFEmUBcpK/ZnEfS8w9D0UxrpwrOIyUDwJhIcCSn/Hiqe0usftDkg6XZByNqK4ZtvGiie+RZmGspfuHyxfiNqTcTb/IhnrHglZCARVMrY6hohikgQ9eZhlyFApXqDL6wbGto/fKB7/cQjVj5usQQOhvOXjqDti3bnmxAefZyqy10geYHmA6OP0UMmCJTMQ6dSEexbCwIdi9c3HXf+dvQKdnCyIEzm4Bm5kdG36E99tSX6g5KO2zbCeJVMfjiJpiB8Wt+LLMWRkYjFPo9hqGehn/uBnXf/yIYZlpaDGeBRjAjkFjc72X6fsjUdL1Te0ni0JSGnZN3QJ/CDXmff69+XK5/Y7ov3kptZ9e+Jmp/JxYQbGXI7Q/8rVdx7Ie2efxjW6qIRUKvKxQBYRbPPJrubP/ZRkgLIXzGpjMdePuAaC9tAx5vY9lvcuPBzK8gaOI12qDn1hKHc4v7n1wBO2SCsKcre+h4XFpi1W3vpMrtz3DKJYz3W2IjAGkI2gYvd1Nuz6Go55zq28HWWvWTombuUYS08NisPGCbdv72Tl0qOoI/eYRgq9Jq0/ZYk0Brfz+wflz8Ita588iLutf9emHhFe7dpXSzD0A2S4LWp0ElKGfJPHGeda4jufxGw1VCgP6DaYL4uK6dKU/etdXvDfL026A49UZWGjVmPRggtFYxpRi/nPbIZJr//AW+O/Crpb9h+y8TM48m3F2uBTvsztRiaTHHVFZw4qPuoTRuEBx+z6Dm6sF8M9lq6yoMqLICy916uOfirnnd2HNe0yDJRvFLoo3cl6/7LbbINAtWBGuviNy+O/icVER1+2fPqLgfQ+avKU7j8llc7VUmchP+sY7YdMnjyuFVwL6iJB9cLIU08XKv3fph0JWlBHlnCBk4aqMxVRTbslhnX/oA5RdKVEQGuEyiO/er2z4dM/ETz27HixF4VyC95dyNrC8sETds/vOIv1Ug9F7hsucuxRt5SJRb1Dgka3Nk2mdM8EaKyYFv/TYG97PGVvftY2m2CanSXtCJPaxbTV8yqdXKEeNRlb5ICjphMsq7MTMUabIPemOIp+9q+uzO49tmj7N7l+SMFtmS7FqZ5pZ9NzOBVFVQ/hUqqbB7rZzEQZWWomInBRtxAQ5Ge0wbn3m5taH9vlmGuHSKtWbNhhUISYaO+Pmev/ruuuyzbdxGrGmSo6ClGoMephDaAWlvTvAnGz/WhXw+4vY1h/xjDiboBx4k68m9MxF7VBIqi/aS9S00cVVo8QTLOhG1aXU2qW8PgLgXKlI1pPZsxte1tSH3kQ3f0YAaFmv9PfBIRtNmrjXJv+2Ek8LQxK5vfM3Nd0dsYjDk5HdJgRNdNoOBU31z2fsDa8iB8p+HWmVnsJCkq0W2Ekrqed7iP5yvnvAzMElUdBxIiUZS3qKIKXlKwcbYzv6LV4+iXspKmow8NlHSKXBcitDuteMfEMn7S7/5j3zh/E8W2NSlX1DJ4605jcMYzTgkE8cwIF8CpTTIsblYcr867+5iboF66ob0NkoPFq0lr/21CxWMbeeiWT6L5YKL/xcjL2bq/iX4NS+ZLuK63GIOH/cf1PgAEACBog/zgmX8gAAAAASUVORK5CYII=) no-repeat center center;
+	background-color: #fff;
+}
+
+.hang{
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6REE1RDlGNzA1MTAyMTFFMzlEOURDRDc5QjAxOUFEMkYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6REE1RDlGNzE1MTAyMTFFMzlEOURDRDc5QjAxOUFEMkYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEQTVEOUY2RTUxMDIxMUUzOUQ5RENENzlCMDE5QUQyRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEQTVEOUY2RjUxMDIxMUUzOUQ5RENENzlCMDE5QUQyRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtWJ6a8AAAKeSURBVHjavJjbiw9hGMd/+yOsw2a1CZuEC7G7kmwk5LDa5JBTLpZ2Vzksu9uu5FSuuECEclxn61ROsRfcyV+wFxJFSxYJyQV2b8R+nnqmfk3zzm/e32/eeepzMzPvO99553m/zzNT0NOwJZVgFMJsKIOJ0AsHC8+1/fEu6J+AiHGwAKpgLFSqMInv0A6vXAsqgiUwC6phsuG6YlgLB7wD6ZiFDIc6uK9P3hoixluQmt5tW0fHvUIDYQ1shnmWDzoJ5sOduFZoMTyGWzpxLnMuZ5XS+Qoaoq+kXfMkn1gGFfkImgAdcAJGxbDKw2BjroLm6PteGPOGmMlrK7NN6k2wA6Y4sAqxiHobQYvgEJQYzj+H2zADbO2/Gy7Bk6iCqjRfgsT8hnuwD77CRS0JLRHm7YKrcIPy0R3Vh2Qpj0J5wDkRsB+uwd+M4606d6Nhzg9wRawCIV1+p8y2m07BtIBzH/XGDw1jm6EfNGQcewc34QJ8Nlm3KUbAZc0Jf7zXp38aMv4/bNd6JYZ5XvPkUypLLTFFi04UlIC7sojJFCXCR8LrKMlqElQdslNOwgOLHfRDiRRBxjgUDhscWOpVm8vmKUjQekMSP4Od0JOkoFLDVv0Hx3Wbp5IUtM6rur4oCHFoZ4IkZzYYrhNBx2BlkoJWZCmaJWrzq5ISJPVqUISeWVqP1a4FTTU4sql/ltpV4+KrxRO0FMZbdnh7YIALQWlt1G3jugtPSmvxG2M57o32PU5yqFI/cW3iDPxyJWg6DLYY81abK2e7rNRyzGltW50JKrK4/oVWfGchPnIEvsBc9aOw13fWprfJVdBL2K1dnfxMqtVPHv/KScd3N8la9g0eaVmQH0x7odO3s366FmSy/k5FusMm/WXSkUT70SfAABcFdfm7EMDsAAAAAElFTkSuQmCC) no-repeat center center;
+	background-color: #fff;
+}
+
+.infoMessage a{
+	color: #14b9d5;
+	text-decoration: underline;
+}
